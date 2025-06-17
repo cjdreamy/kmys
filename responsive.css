@@ -1,0 +1,109 @@
+/* GENERAL SETTINGS FOR MOBILE */
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 90%;
+}
+
+/* Hero section adjustments */
+.hero-37 {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.text-33 {
+  font-size: 2.2rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+.text-34 {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Fixing #m-body for mobile view */
+#m-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Columns and image containers */
+.section-columns {
+  flex-direction: column !important;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* Adjust buttons and links */
+button,
+a.button,
+.cta-button {
+  width: 90%;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem auto;
+  display: block;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.footer, .footer-links {
+  flex-direction: column;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+/* Testimonials and team sections */
+.testimonial, .team-member, .card {
+  width: 90% !important;
+  margin: 1rem auto;
+}
+
+/* Navbar toggle (for mobile menu if any JS added later) */
+.navbar-menu {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Event Section */
+#events-section {
+  padding: 1rem;
+}
+
+.card-image {
+  height: auto;
+}
+
+/* Newsletter form */
+.newsletter-form {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Adjust heading sizes */
+h1, h2, h3 {
+  font-size: 1.4rem;
+}
+
+h4, h5 {
+  font-size: 1rem;
+}
