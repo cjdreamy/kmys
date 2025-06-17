@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>kmys</title>
+
+<!-- ---------------------------------
+ Author : Joseph Aloyce 
+ Content : kmys website
+ origin: kenya
+ all rigts reseverd
+
+--------------------------------- -->
+<link rel="icon" href="./images/kmys.png">
+    <meta content="portfolio" property="og:title"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8"/>
+    <meta :="" content="kmys" property=" "/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<link href="./style.css" rel="stylesheet"/>
+<link href="./index.css" rel="stylesheet"/>
+
+<style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0; 
+         border-style: solid;  -webkit-font-smoothing: antialiased;}
+         p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
+         button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}
+
+         button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}
+         button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}
+
+
+
+         [data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  
+            overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+<style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      html {
+  scroll-behavior: smooth;
+}
+
+<style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: whitesmoke;
+        background: rgb(2, 41, 2);
+        background-image: url("./images/mbogi.jpg");
+        background-size: cover;
+        background-position:  center;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+      
+
+
+    
+    </style>
+
+    <!-- style for loader -->
+
+    <style>
+
+      #loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #1d1b1b, #010b2b, #493f4a, #150606);
+  z-index: 9999; 
+}
+
+.upper{
+  color: aqua;
+  font-size: 36px;
+  transition: all ease;
+  
+
+}
+
+@media(max-width: 479px) {
+  .upper{
+    font-size: 25px;
+  }
+
+  .wel1{
+    font-size: 25px;
+  }
+}
+
+
+#wel-wrapper{
+  display: inline-block;
+ 
+
+}
+
+      .welcome{
+      font-size: 2rem;
+      color: azure;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: solid 2px;
+      animation: typing 1.9s steps(23),
+      cursor 0.4s  infinite alternate ;
+    }
+
+    @keyframes typing{
+      from{
+        width: 0;
+      }
+    }
+
+    @keyframes cursor{
+      50%{
+        border-color: transparent;
+      }
+     
+    }
+
+    </style>
+
+
+<link href="./images/kmysl2.png" rel="icon"/>
+<link href="https://unpkg.com/animate.css@4.1.1/animate.css" rel="stylesheet">
+<link data-tag="font" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<link data-tag="font" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"/>
+<link data-tag="font" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+
+   <script>
+    
+
+    setInterval( () =>{
+    const loader = document.getElementById("loader");
+    loader.style.display = 'none' ;
+
+    window.addEventListener('load', () => {})
+ const loader2 = document.getElementById("loader");
+    loader2.style.display = 'none' ;
+
+  }, 2500)
+  </script>
+<!-- loader -->
+
+  <div id="loader">
+    <div id="wel-wrapper">
+    <div class="welcome">  <span class="wel1"><span class="upper">K</span>nowledge <span class="upper">M</span>ind  <span class="upper">Y</span>outh <span class="upper">S</span>oul !..</div>
+ </span>
+  </div>
+  </div>
+<!-- end of loader -->
+
+<!-- mood -->
+<div id="m-body">
+<p class="lne"> What is Your Mood right Now</p> <br>
+
+<p id="emoji">😐</p> <br>
+
+<input type="range" min="0" max="4" value="0" oninput="emoji.innerText = 
+['😐', '🙂', '😎', '😄', '😂'][this.value]" style="cursor: pointer;" > <br> <br>
+
+<button id="m-check"> Continue </button> 
+</div>
+
+<!-- mood end -->
+ 
+
+  
+
+  <!--Navbar8 component-->
+  <section id="nav-bar-1">
+  <div class="container-11"  >
+<navbar-53   class="navbar-53">
+  
+<header  class="navbar-17">
+
+  <header class="navbar-43"   data-thq="thq-navbar">
+
+    <!-- kmys logo -->
+
+  <div alt="kmys logo" class="navbar-22"  >
+
+ <a href="./index.html"><svg height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+
+<circle cx="24" cy="24" fill="green" r="23" stroke="white" stroke-width="2"></circle>
+
+<text fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="50%" y="58%">KMYS</text>
+</svg></a>
+</div><div class="navbar-37" data-thq="thq-navbar-nav">
+  
+  <nav class="navbar-56">
+    
+
+    <a class="navbar-14 thq-link thq-body-small" href="./componets/contacts10.html">
+      <span class="text-51">HOME</span></a>
+    
+    <a class="thq-link thq-body-small" href="./componets/features24.html">
+      <span class="text-48">CONNECT</span></a>
+      
+      <a class="navbar-47 thq-link thq-body-small" href="./componets/pricing14.html"
+       rel="noreferrer noopener" target="_blank">
+        <span class="text-104">TALK</span></a>
+        
+        <a><span class="thq-link thq-body-small">
+          <span class="text-84">LEARN</span> </span></a>
+
+
+          <div class="dropdown">
+    <a href="#"><span class="dropdown-button" class="thq-link" >MORE 
+      <i id="i"><img src="./images/dropdown.svg" alt="Icon "></i> </span></a>
+    <div class="dropdown-content">
+      <a href="./componets/about.html">About</a>
+      <a href="#">Login</a>
+      <a href="#">Events</a>
+    </div>
+  </div>
+
+          <div class="navbar-6">
+          <div class="navbar-57">  
+            
+
+
+
+</div></div></div>
+
+</nav>
+
+<!-- extreme right-side -->
+<div class="navbar-45">
+  <button class="navbar-25 thq-button-animated thq-button-filled">
+    
+    <span class="text-44" >Subscribe</span>
+  
+  </button>
+  
+  <button class="navbar-58 thq-button-outline thq-button-animated">
+    
+    <span class="text-126">support Us</span>
+</button>
+
+</div>
+
+<div class="navbar-73" data-thq="thq-burger-menu"    >
+  
+ 
+
+<div class="dropdown">
+    <div class="dropdown-button">
+
+ <div id="menu-button"  class="navbar-9" id="open" onclick="toggleMenu()" >☰</div>
+    </div>
+    <div class="dropdown-content">
+      <a href="#">HOME</a>
+      <a href="#">CONNECT</a>
+            <a href="#">TALK</a>
+
+      <a href="#">LEARN</a>
+      <a href="#">LOGIN</a>    
+        <a href="#">EVENTS</a>
+
+      <a href="./componets/about.html">ABOUT</a>
+
+    </div>
+  </div>
+  
+</div>
+
+</div>
+<script>
+  const open = document.getElementById("open");
+  open.addEventListener('click', () =>{
+    document.getElementById.style.display = 'block';
+  })
+</script>
+<!-- <div class="navbar-30" data-thq="thq-mobile-menu">
+  
+  <div class="navbar-7">
+
+    <div class="navbar-66">
+    <img alt="Futuristic Blog Logo" class="navbar-51" src=""/>
+    
+    <div class="navbar-55" data-thq="thq-close-menu"><svg class="navbar-16" viewbox="0 0 1024 1024">
+
+      <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path></svg></div></div><nav class="navbar-27">
+        <a class="navbar-72 thq-link thq-body-small" href=""><span class="text-51">#</span></a>
+        <a class="thq-link thq-body-small" href=""><span class="text-48">#</span></a>
+        <a class="navbar-59 thq-link thq-body-small" href=""><span class="text-104">#</span></a><div class="navbar-18"><div class="navbar-28"><span class="thq-link thq-body-small"><span class="text-84">#</span></span><div class="navbar-62"><div class="navbar-13"><svg class="navbar-54" viewbox="0 0 1024 1024">
+
+        <path d="M298 426h428l-214 214z"></path>
+
+      </svg></div><div class="navbar-21">
+  <svg class="navbar-19" viewbox="0 0 1024 1024">
+
+
+    <path d="M426 726v-428l214 214z"></path>
+
+  </svg></div></div></div><div class="navbar-40">
+  
+  
+    <a href="#">
+    <div class="navbar-64"><img alt="Home Image" class="navbar-1" src=""/>
+      <div class="navbar-29"><span class="navbar-20 thq-body-large">
+        <span class="text-53">Home</span></span><span class="thq-body-small">
+          <span class="text-29">
+  
+    Explore the latest futuristic topics on our
+
+                                    blog.</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </a>
+                            
+                            <a href="#">
+                              <div class="navbar-33">
+                                <img alt="About Image" class="navbar-69" src=""/>
+                                <div class="navbar-42"><span class="navbar-4 thq-body-large">
+                                  <span class="text-22">About</span></span>
+                                  <span class="thq-body-small">
+                                    <span class="text-60">Learn more about our futuristic blog and
+                                    team.
+                                  </span>
+                                </span>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#">
+                            <div class="navbar-34">
+                              <img alt="Blog Image" class="navbar-46" src=""/>
+                              <div class="navbar-52">
+                                <span class="navbar-5 thq-body-large">
+                                <span class="text-117">Blog</span>
+                              </span><span class="thq-body-small">
+                                <span class="text-35">
+                                  Read our insightful articles on
+                                    cutting-edge technologies.</span>
+                                  </span></div>
+                                </div></a><a href="#"><div class="navbar-3">
+                                  <img alt="Contact Image" class="navbar-26" src=""/><div class="navbar-65"><span class="navbar-32 thq-body-large"><span class="text-1">Contact</span></span><span class="thq-body-small"><span class="text-88">Get in touch with us for collaborations or
+                                    inquiries.</span></span></div></div></a></div></div></nav><div class="navbar-10"><button class="thq-button-filled"><span><span class="text-44">Subscribe</span></span></button><button class="thq-button-outline"><span><span class="text-126">Search</span></span></button></div></div><div class="navbar-61"><svg class="thq-icon-x-small" viewbox="0 0 950.8571428571428 1024">
+
+                                      <path d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"></path></svg><svg class="thq-icon-x-small" viewbox="0 0 877.7142857142857 1024">
+
+                                        <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path></svg><svg class="thq-icon-small" viewbox="0 0 602.2582857142856 1024">
+
+                                          <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path></svg></div></div><div class="navbar-60 thq-box-shadow"><div class="navbar-top" id="nav"><a href="#home"><div class="navbar-71">
+                                            <img alt="Home Image" class="navbar-39 thq-img-ratio-1-1" src=""/><div class="navbar-11"><span class="navbar-35 thq-body-large"><span class="text-53">Home</span></span><span class="thq-body-small"><span class="text-29">Explore the latest futuristic topics on our
+                              blog.</span></span></div></div></a><a href="#"><div class="navbar-50">
+                                <img alt="About Image" class="navbar-36 thq-img-ratio-1-1" src=""/>
+                                <div class="navbar-67"><span class="navbar-8 thq-body-large">
+                                  <span class="text-22">About</span></span><span class="thq-body-small">
+                                    
+                                    <span class="text-60">Learn more about our futuristic blog and
+                              team.</span></span></div></div></a><a href="#"><div class="navbar-23">
+                                <img alt="Blog Image" class="navbar-24 thq-img-ratio-1-1" src=""/><div class="navbar-31">
+                                  <span class="navbar-63 thq-body-large">
+                                    <span class="text-117">Blog</span></span><span class="thq-body-small">
+                                      <span class="text-35">Read our insightful articles on cutting-edge
+                              technologies.</span></span></div></div></a><a href="#"><div class="navbar-48">
+                                <img alt="Contact Image" class="navbar-38 thq-img-ratio-1-1" src=""/><div class="navbar-12"><span class="navbar-68 thq-body-large"><span class="text-1">Contact</span></span><span class="thq-body-small"><span class="text-88">Get in touch with us for collaborations or
+                              inquiries.</span></span></div></div></a> 
+                            
+                            </div></div></header>-->
+                              </section>
+                              
+                              <!--Hero17 component-->
+                              
+                              <section id="hero-section">
+                              <hero-9 class="hero-9">
+                                
+                                
+<div  id="centerlogo"  >
+<img alt="kmys logo" src="./images/kmyslogo.webp"/>
+</div>
+
+<div class="hero-4">
+  <div class="hero-22 thq-section-padding thq-section-max-width">
+    <div class="hero-37">
+
+  <h1 class="hero-18 thq-heading-1" >
+
+    <span class="text-33">Welcome To KMYS RESEARCH4MIND  </span></h1>
+  <p class="hero-23 thq-body-large">
+    <span class="text-85">Lets walk together ❤️</span></p>
+
+                    </div>
+
+                    
+                    <div class="hero-5" >
+                      <a href="https://wa.me/254702766635" ><button class="thq-button-filled hero-12" id="joinus" >
+                        <span class="thq-body-small">
+                          <span class="text-110">Join Us</span>
+
+                        </span>
+                      </button></a>
+                      
+                      <!-- <button class="thq-button-outline hero-10">
+                          <span class="thq-body-small"><span class="text-132">Secondary action</span>
+                        </span></button> -->
+
+                      </div></div>
+                        
+                        </section>
+                        <!-- end of hero -->
+                      
+                        
+                        <div class="hero-3">
+
+                          <div class="hero-13 thq-animated-group-container-horizontal thq-mask-image-horizontal">
+
+
+                            <div class="thq-animated-group-horizontal">
+                              
+                              <img alt="Hero Image" class="hero-34 thq-img-scale thq-img-ratio-1-1" src="./images/gate.jpg"/>
+                        
+                        <img alt="Hero Image" class="hero-11 thq-img-scale thq-img-ratio-1-1" src="./images/championship.jpg"/>
+                        
+                        <img alt="waterfall Image" class="hero-25 thq-img-scale thq-img-ratio-1-1" src="./images/waterfall.jpg"/>
+                      
+                    
+                    </div><div class="thq-animated-group-horizontal">
+                      
+                      <img alt="wings Image" class="hero-36 thq-img-scale thq-img-ratio-1-1" src="./images/kiru.png"/>
+                          
+                          <img alt="group" class="hero-14 thq-img-scale thq-img-ratio-1-1" src="./images/mbogi.jpg"/>
+                          
+                          <img alt=" kiiru" class="hero-7 thq-img-scale thq-img-ratio-1-1" src="./images/badge.jpg"/>
+                          
+                          <img alt="Griffin" class="hero-6 thq-img-scale thq-img-ratio-1-1" src="./images/tank2.jpg"/>
+                        
+
+                        </div>
+                      </div>
+
+                      <div class="hero-32 thq-animated-group-container-horizontal thq-mask-image-horizontal">
+                        <div class="thq-animated-group-horizontal-reverse">
+                          
+                          <img alt="welcome" class="hero-19 thq-img-scale thq-img-ratio-1-1" src="./images/kmys10.webp"/>
+                          
+                          <img alt="kmys" class="hero-20 thq-img-scale thq-img-ratio-1-1" src="./images/kmys11.webp"/>
+                          
+                          <img alt="kmys" class="hero-31 thq-img-scale thq-img-ratio-1-1" src="./images/kmys12.webp"/>
+
+                          <img alt="kmys" class="hero-2 thq-img-scale thq-img-ratio-1-1" src="./images/kmys14.webp"/>
+                          
+                          <img alt="kmys" class="hero-28 thq-img-scale thq-img-ratio-1-1" src="./images/kmys13.webp"/>
+                          
+                          <img alt="kmys" class="hero-26 thq-img-scale thq-img-ratio-1-1" src="./images/mmonth.webp"/>
+                        
+                        </div>
+                        
+                        <div class="thq-animated-group-horizontal-reverse">
+                          
+                          <img alt="kmys" class="hero-27 thq-img-scale thq-img-ratio-1-1" src="./images/femicide.webp"/>
+                          
+                          <img alt="kmys" class="hero-35 thq-img-scale thq-img-ratio-1-1" src="./images/survivors.webp"/>
+                            
+                            <img alt="kmys" class="hero-1 thq-img-scale thq-img-ratio-1-1" src="./images/mmonth.webp"/>
+                            
+                            <img alt="kmys2m image" class="hero-15 thq-img-scale thq-img-ratio-1-1" src="./images/lens.jpg"/>
+                            
+                            <img alt=""/>
+                            
+                            <img alt="Hero Image" class="hero-16 thq-img-scale
+                             thq-img-ratio-1-1" src="./images/mmonth.webp"/>
+                            </div>
+                          </div>
+                        </div><div>
+                          <div class="hero-8">
+                            
+                            <style>
+                  @keyframes scroll-x {
+                    from {
+                      transform: translateX(0);
+                    }
+                    to {
+                      transform: translateX(calc(-100% - 16px));
+                    }
+                  }
+
+                  @keyframes scroll-y {
+                    from {
+                      transform: translateY(0);
+                    }
+                    to {
+                      transform: translateY(calc(-100% - 16px));
+                    }
+                  }
+                </style>
+
+</div>
+</div>
+</div>
+</hero-9>
+<features-18 class="features-18">
+
+
+
+<!--Features24 component-->
+<!-- end of Features24 component-->
+
+
+
+
+                            <!--CTA26 component-->
+
+
+<div class="thq-section-padding">
+  <div class="thq-section-max-width">
+    <div class="cta-7">
+    <div class="cta-4"><div class="cta-2">
+      <div class="cta-3">
+    <span class="thq-heading-2">
+      <span class="text-66">Stay Updated with the Latest 
+                            Trends</span>
+                          </span><p class="thq-body-large">
+                              <span class="text-55">Join our newsletter to receive weekly updates on
+                            cutting-edge content, help , events,
+                             and more.</span></p>
+                            </div><div class="cta-5">
+                              <button class="thq-button-filled cta-6" type="button">
+                                <span><span class="text-4">Follow us Now</span>
+                              </span></button></div>
+                            </div></div></div></div>
+                          </div></cta-1>
+                          <features-23 class="features-23">
+
+<!--Features25 component-->
+<div class="thq-section-padding">
+  
+  <div class="features-1 thq-section-max-width"><div class="features-37">
+    <div class="features-11"><div class="features-12"><div class="features-5">
+
+    </div></div><div class="features-7"><h2 class="thq-heading-2">
+      <span class="text-134">Our Motto</span></h2>
+      <span class="thq-body-small">
+        <span class="text-116">Priotizing Mental Stability</span>
+                        </span></div></div><div class="features-14">
+                          <div class="features-4"><div class="features-15">
+
+                          </div></div><div class="features-36">
+                            <h2 class="thq-heading-2">
+                              <span class="text-61">Our Vision</span>
+                            </h2><span class="thq-body-small">
+
+                              <span class="text-20">To foster a society where eveyone <br> is true to themselves and understands the
+                                <br> importance
+                                 of Mental Health
+                              </span>
+                        </span></div></div><div class="features-31">
+                          <div class="features-24"><div class="features-8">
+
+                          </div></div>
+                          
+                          <div class="features-13"><h2 class="thq-heading-2">
+                            <span class="text-59">Our Mission</span></h2>
+                            
+                            <span class="thq-body-small">
+                              <span class="text-107">To Create a community for the Youth <br> that Advocates for Mental Wellness</span>
+                        </span></div></div></div>
+                        <div class="features-25">
+                          <img alt="kmys" class="features-22 thq
+                          -img-ratio-16-9" src="./images/kmys(rep).webp"/>
+                          
+                          <img alt="kmys picture" class="features-16 th
+                          q-img-ratio-16-9" src="./images/survivors.webp"/>
+                          
+                          <img alt="kmys" class="features-21 thq-img-ratio-16-9" src="./images/kmys14.webp"/></div></div></div></features-23><pricing-10 class="pricing-10">
+<!--Pricing14 component-->
+<!-- end pf pricing -->
+
+
+
+      <!--Steps2 component-->
+
+      <div class="container-10 thq-section-padding">
+        <div class="class-96 thq-section-max-width">
+          <div class="container-14 thq-grid-2">
+            <div class="header-1">
+              <h2 class="thq-heading-2">View our Welcome Bronchure</h2>
+
+              <p class="thq-body-large" > We are always more than ready to offer you help  </p>
+
+                    <div class="class-22">
+                      <a href="./KMYS Welcome Brochure.pdf" target="_blank">
+<button class="bronchure">
+
+                         view our Bronchure</button>
+                      </a>
+                    </div>
+                  </div>
+                      <div class="container-9">
+                          
+                          <div class="container-18 thq-card"><h2 class="thq-heading-2">
+                            <span class="text-95">KNOWLEDGE</span></h2><span class="text-118 thq-body-small">
+                              <span class="text-46"> to create awarenes about self throug technologies
+                          </span></span>
+                          
+                          <label class="text-124 thq-heading-3">01</label>
+                        </div><div class="container-7 thq-card">
+                          <h2 class="thq-heading-2"><span class="text-69">MENTAL</span></h2><span class="text-9 thq-body-small">
+                            <span class="text-6"> 
+                              Mental health is taken seriously
+                            </span></span><label class="text-40 thq-heading-3">02</label></div>
+                          <div class="container-22 thq-card">
+
+                            <h2 class="thq-heading-2"><span class="text-120">YOUTH</span></h2><span class="text-99 thq-body-small">
+                              <span class="text-68"> Focusin more on the youth because they are the leaders  of tommorrow </span>
+                            </span><label class="text-112 thq-heading-3">03</label>
+                          </div><div class="container-5 thq-card"><h2 class="thq-heading-2">
+                            <span class="text-32">SOUL</span></h2><span class="text-19 thq-body-small"><span class="text-26">
+                             touching souls, it is waht needs to be protected together with the body.</span></span><label class="text-76 thq-heading-3">04</label></div></div></div></div></div></wrapper-2><wrapper-3 class="wrapper-3">
+                            
+                            
+                            <!--Testimonial17 component-->
+
+
+                            <div class="thq-section-padding">
+                              <div class="class-135 thq-section-max-width">
+                              <div class="container-13">
+                                <h2 class="thq-heading-2">
+                                  <span class="text-25">Testimonials</span></h2>
+                                  <span class="text-130 thq-body-small">
+                                    <span class="text-100">
+                                       what our friends say about us and what our able Leaders say  
+                                    </span></span></div><div class="thq-grid-2">
+                        <div class="thq-animated-card-bg-2"><div class="thq-animated-card-bg-1">
+                          <div class="thq-card class-33" data-animated="true">
+                            
+                            <div class="container-17">
+
+                            <img alt="Image of  David Kiiru" class="image-2" src="./images/kiru.png"/><div class="container-12"><strong class="thq-body-large">
+                              <span class="text-56">Kiiru Kimani </span></strong><span class="thq-body-small">
+                                <span class="text-80">-CEO and Co-founder, KMYS.</span></span></div></div>
+                                <span class="text-94 thq-body-small"><span class="text-83">
+                                  It all comes to impact. Even when you 
+                                  tell them all about how hard your past has been, they will ask you what you 
+                                  did with it. What will you have to show for it? Did you grow?
+</span></span>
+                              
+                              </div></div></div><div class="thq-animated-card-bg-2">
+                                <div class="thq-animated-card-bg-1"><div class="thq-card class-66" data-animated="true">
+                                  <div class="container-20">
+                                    <img alt="Griffin image" class="./images/kiru.png"/>
+                                    <div class="container-1" style="color:black;"><strong class="thq-body-large">
+                                      <span class="text-13
+                                1">Griffin Makari
+</span>
+
+</strong><span class="thq-body-small"><span class="text-12">-Director, KMYS Connect</span></span></div>
+                              </div><span class="text-93 thq-body-small">
+
+                        <span class="text-41" > Welcome</span></span></div></div></div><div class="thq-animated-card-bg-2"><div class="thq-animated-card-bg-1">
+                              <div class="thq-card class-32" data-animated="true"><div class="container-16">
+                                <img alt="Image of David Johnson" class="image-4" src="./images/kiru.png"/>
+                              <div class="container-23">
+
+                                <strong class="thq-body-large">
+
+                              <span class="text-78">Jean Finbar</span>
+
+                            </strong><span class="thq-body-small"><span class="text-34">-Events Coordinator</span></span></div></div>
+                            <span class="text-31 thq-body-small">
+                              <span class="text-92"> Welcome all</span></span></div></div></div>
+                            <div class="thq-animated-card-bg-2"><div class="thq-animated-card-bg-1"><div class="thq-card class-48" data-animated="true">
+                              <div class="container-3">
+                                <img alt="Image of Jean Fibar" class="image-5" src="./images/kiru.png">
+                              <div class="container-21">
+
+                                <strong class="thq-body-large"><span class="text-96">Faith Jaher</span>
+
+                                
+                                </strong><span class="thq-body-small">
+                                  <span class="text-15">-Volunteer Coordinator</span></span></div></div><span class="text-79 thq-body-small">
+                                    <span class="text-54"></span>
+                          </span></div></div></div></div></div></div></wrapper-3>
+                            <wrapper-1 class="wrapper-1">
+                              
+                              <!--Contact10 component-->
+                              
+                              <div class="container-2 thq-section-padding">
+                                <div class="class-3 thq-section-max-width">
+                                  <div class="class-70 thq-flex-row">
+                                    <div class="class-7">
+                                      <h2 class="thq-heading-2">
+                                        <span class="text-108">Contact Us
+
+                                        </span>
+                                      </h2><p class="thq-body-large">
+                                        <span class="text-121">Always ready to help you with your queries and
+                                          suggestions. </span></p>
+                      </span></p>
+                    </div>
+                  </div><div class="class-52 thq-flex-row">
+                    <div class="container-19 >
+                    <img alt="Email icon" class="image-1 thq-img-ratio-16-9" src=""/>
+                    <h3 class="text
+                    -114 thq-heading-3">
+                    <span class="text-70">Email: kmys.co.info.com</span></h3><p class="thq-body-l
+                    arge">
+                    <span class="text-75">For any inquiries or collaborations, feel free to reach
+                        out to us via email.</span>
+
+                      </p><div class="container-8">
+                        <a class="thq-button-flat thq-body-small" href="https://example.com" rel="noreferrer noopener" target="_blank">
+                          Get directions
+
+                        </a></div></div><div class="container-4">
+                          <img alt="Social media icons" class="image-6 thq-img-ratio-16-9" src="./images/contactUs.png"/>
+                          
+                          <h3 class="text-27 thq-heading-3"><span class="text-109">Social Media: @kmys.co</span></h3>
+                          <p class="thq-body-large">
+                            <span class="text-3">Stay connected with us on social media for the latest
+                        updates and  help. </span>
+                      </p><div class="container-15">
+                        <a class="thq-button-flat thq-body-small" href="" rel="" target="_blank">Get directions</a>
+                      </div></div></div></div></div></wrapper-1><wrapper-4 class="wrapper-4">
+                         
+                         
+                         
+                         
+                         
+                         
+                          <!--Footer4 component-->
+<section id="footer1">
+                          <footer class="class-124 thq-section-padding">
+                            <div class="class-86 thq-section-max-width">
+                              <div class="class-131"><div class="class-11">
+
+                                <a href="#hero-section"><img alt="kmys Logo" class="class-28" src="./images/kmyslogo.webp"   style="cursor: pointer;" /></a>
+                  </div>
+                  <div class="link-1">
+                    <a class="thq-body-small" href="" rel="noreferrer noopener" target="_blank">
+                      <span class="text-45">About Us</span></a>
+                      
+                      <a class="thq-body-small" href="" rel="noreferrer noopener" target="_blank">
+                        <span class="text-98">Contact</span></a>
+                        
+                        <a class="thq-body-small" href="" rel="noreferrer noopener" target="_blank">
+                    <span class="text-127">Privacy policy</span></a>
+
+                    <a class="thq-body-small" href="#" rel="noreferrer noopener" target="_blank">
+
+                      <span class="text-63">Terms of Service</span></a><a class="thq-body-small" href="./index.html" rel="noreferrer noopener" target="_blank">
+                      <span class="text-30">Subscribe to Newsletter</span></a></div></div>
+                      <div class="class-82"><div class="thq-divider-horizontal"></div><div class="class-42">
+                        <div class="container-6">
+                        <span class="thq-body-small">Copyright © 2025 kmys.co  - All Rights Reserved.</span>
+                      </div><div class="link-2"><span class="text-8 thq-body-small">
+                        <span class="text-101">Privacy Policy</span></span><span class="thq-body-small">
+                          <span class="text-13">Terms of Service</span></span><span class="thq-body-small">
+                            <span class="text-37">Cokies policy</span>
+                    </span></div></div></div></div></footer></wrapper-4></div></section>
+
+                  
+                   <div class="social-links">
+  <a href="https://wa.me/your-number" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com/yourusername" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/yourusername" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://x.com/yourusername" class="twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/yourusername" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.tiktok.com/@yourusername" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+  <a href="https://github.com/yourusername" class="github" target="_blank"><i class="fab fa-github"></i></a>
+
+ 
+</div>
+<br>
+ For web Design &Creation :: <a id="ca" href="https://wa.me/254702766635"  target="_blank"><span id="cj">CJ Dreamy</span></a> 
+<br>
+</div>
+
+
+
+
+
+                   
+
+<script     
+      src="index.js"
+    ></script> 
+
+
+<script>
+
+</script>
+
+</body></html>
